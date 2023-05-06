@@ -28,7 +28,9 @@
       rel="stylesheet"
     />
 
+    <!-- пфдключаємо стилі -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
@@ -41,10 +43,10 @@
           >
 
           <ul class="site-links list">
-            <li class="item">
+            <li class="item item-studio">
               <a href="./index.html" class="link nav-link">Studio</a>
             </li>
-            <li class="item item-portfolio">
+            <li class="item">
               <a href="./portfolio.html" class="link nav-link">Portfolio</a>
             </li>
             <li class="item"><a href="" class="link nav-link">Contacts</a></li>
@@ -66,11 +68,92 @@
             </li>
           </ul>
         </address>
+
+        <!-- кнопка відкриття мобільної навігації -->
+        <button class="button-mobile-open" js-menu-open>
+          <svg
+            class="mobile-icon-modal"
+            width="32"
+            height="22"
+            fill="currentColor"
+          >
+            <use href="./images/icon.svg#icon-charm-menu-hamburger"></use>
+          </svg>
+        </button>
+
+        <!--*** навігація для мобільних пристроїв ***-->
+        <div
+          class="menu-container menu-closed"
+          id="mobile-menu"
+          js-menu-container
+        >
+          <!-- кнопка закриття мобільного контейнера -->
+          <button class="button-modal-close" js-menu-close>
+            <svg class="icon-modal" width="24" height="24">
+              <use href="./images/icon.svg#icon-close-black"></use>
+            </svg>
+          </button>
+
+          <!-- меню для мобільного контейнера -->
+          <ul class="mobile-menu list">
+            <li class="item">
+              <a href="./index.html" class="link link-mobile">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link link-mobile">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="" class="link link-mobile">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-contacts list">
+            <li class="mobile-tel link">
+              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-email link">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <div class="mobile-socials">
+                <ul class="list-networks">
+                  <li class="list team-network">
+                    <a href="" class="link href-teamnetwork">
+                      <svg class="icon-network-team" width="16" height="16">
+                        <use href="./images/icon.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="list team-network">
+                    <a href="" class="link href-teamnetwork">
+                      <svg class="icon-network-team" width="16" height="16">
+                        <use href="./images/icon.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="list team-network">
+                    <a href="" class="link href-teamnetwork">
+                      <svg class="icon-network-team" width="16" height="16">
+                        <use href="./images/icon.svg#icon-facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li class="list team-network">
+                    <a href="" class="link href-teamnetwork">
+                      <svg class="icon-network-team" width="16" height="16">
+                        <use href="./images/icon.svg#icon-linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-
     <!-- unique content --->
-    <main>
+    <main class="main">
       <section class="section portfolio">
         <div class="container">
           <h1 class="hidden-title">Portfolio</h1>
@@ -454,7 +537,8 @@
       </div>
     </div>
      
+<script src="./js/modal.js"></script>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
