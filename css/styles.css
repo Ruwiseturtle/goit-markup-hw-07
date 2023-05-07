@@ -66,6 +66,8 @@ ul {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+
+  outline: 1px solid red;
 }
 
 /*------------- button index--------------*/
@@ -257,9 +259,7 @@ ul {
 }
 
 .project {
-  width: calc(
-    (100% - (var(--project-in-line)-1) * 24px) / var(--project-in-line)
-  );
+  width: calc((100% - 24px*(var(--project-in-line) - 1))/var(--project-in-line));
 }
 
 .logo-black {
@@ -430,8 +430,8 @@ ul {
 
 .modal {
   position: absolute;
-
-  max-width: 100%;
+  width: 392px;
+  max-width: 95%;
   min-height: 584px;
 
   padding-top: 72px;
@@ -522,7 +522,7 @@ ul {
 
 .modal-input {
   height: 40px;
-  width: 360px;
+  width: 100%;
   padding: 11px 38px;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -640,7 +640,7 @@ ul {
 }
 
 .qualities-text {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -712,7 +712,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  margin-bottom: 8px;
+ 
 }
 
 .list-work {
@@ -819,7 +819,7 @@ ul {
 }
 
 .member {
-  width: calc((100% / 3) * 2);
+  /* width: calc((100% / 3) * 2); */
 
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -834,7 +834,7 @@ ul {
 .list-networks {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .icon-network-team {
@@ -903,7 +903,7 @@ ul {
 .customer {
   /* min-width: 190px; */
   height: 88px;
-  width: calc((100% / 2) - 48px);
+  width: calc((100% - 16px) / 2);
 }
 
 .href-customer {
@@ -1049,7 +1049,6 @@ ul {
   padding-right: 16px;
 
   margin-bottom: 16px;
-  min-width: 319px;
   max-width: 398px;
   height: 40px;
   border-radius: 4px;
