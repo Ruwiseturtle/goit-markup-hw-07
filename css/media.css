@@ -99,10 +99,19 @@
     padding-right: 0;
   }
 
-  .container-footer {
+  .footer-items {
+    max-width: 552px;
+  }
+
+  .footer-text{
+    margin: 0;
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+  .container-footer .container-networks{
+    display: block;
     flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 24px;
+    margin-bottom: 0;
   }
 
   .text-subscribe {
@@ -124,10 +133,21 @@
     min-width: 264px;
   }
 
+  .footer-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
   .container-logo {
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
+  }
+
+  .footer-logo {
+    text-align: left;
+    
   }
 
   .container-networks {
@@ -138,13 +158,16 @@
   .container-subscribe {
     display: flex;
     justify-content: flex-start;
-    margin-left: 120px;
+   
   }
 
   .container-subscribe + .text-subscribe {
     margin-left: calc(100% - 500px);
   }
 
+  .contact-link{
+     font-size: 12px;
+  }
   .modal {
     width: 408px;
   }
@@ -267,9 +290,7 @@
     padding-bottom: 120px;
   }
 
-  .footer-logo {
-    text-align: left;
-  }
+  
 
   .container-logo {
     margin: 0 120px 0 0;
@@ -313,14 +334,32 @@
     max-width: 1128px;
   }
 
+  .list-team{
+    max-width: 100%;
+  }
+
+  .footer-items {
+    max-width: 100%;
+  }
+
+  .footer-text{
+    margin-right: 120px;
+  }
+
+
   /* portfolio */
   .list-projects {
     column-gap: 24px;
     row-gap: 40px;
   }
 
+  .contact-link{
+     font-size: 16px;
+  }
+
   .portfolio {
     padding-bottom: 120px;
+    padding-top: 100px;
   }
   .list-filter {
     margin-bottom: 100px;

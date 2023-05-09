@@ -67,7 +67,7 @@ ul {
   padding-left: 16px;
   padding-right: 16px;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /*------------- button index--------------*/
@@ -712,6 +712,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 8px;
  
 }
 
@@ -943,14 +944,20 @@ ul {
 .container-footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+}
+
+.footer-items{
+  width: 100%;
+
+  /* outline: 1px solid green; */
 }
 
 .container-logo {
   /* mobile styles */
   margin: 0;
-  margin-bottom: 72px;
+  margin-bottom: 17px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -960,6 +967,10 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   color: var(--third-text-color);
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
 }
 
 .container-networks {
@@ -967,6 +978,15 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
+
+}
+
+.container-footer .container-networks{
+     
+   display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 
 .footlist-networks {
